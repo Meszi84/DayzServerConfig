@@ -29,6 +29,7 @@ class CfgVehicles
 	class Predators_Armband: Armband_ColorBase
 	{
 		scope=2;
+		visibilityModifier=0.94999999;
 		hiddenSelectionsTextures[]=
 		{
 			"FinalDay_Flags\data\PredatorsFlag.paa"
