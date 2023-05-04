@@ -24,6 +24,16 @@ class CfgVehicles
 		{
 			"nameofprojectfolder\data\nameofyourflagfile.paa"
 		};
+        };
+	class Armband_ColorBase;
+	class Predators_Armband: Armband_ColorBase
+	{
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"FinalDay_Flags\data\PredatorsFlag.paa"
+		};
+	};
 };
 };
 
