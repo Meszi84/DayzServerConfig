@@ -42,3 +42,4 @@ class CfgVehicles
 		};
 	};
 };
+/* Create data map and add armbrand.paa */
