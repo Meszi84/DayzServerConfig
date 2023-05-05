@@ -36,6 +36,11 @@ class CfgMods
 				value = "";
 				files[] = {"FinalDay_Flags/scripts/3_Game"};
 			};
+			class worldScriptModule
+			{
+				value = "";
+				files[] = {"MyFlags/scripts/4_World"};
+			};
 		};
 	};
 };
