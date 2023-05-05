@@ -88,7 +88,7 @@ class CfgVehicles
 		};
 		class Crafting
 		{
-			displayName = "Predators_Armband";
+			displayName = "Predators Armband";
 			tools[] =
 			{
 				"Knife",
@@ -99,7 +99,7 @@ class CfgVehicles
 			};
 			components[] =
 			{
-				{"Predators_Armband", 1}
+				{"Predators_Flag", 1}
 			};
 			result[] =
 			{
@@ -128,7 +128,7 @@ class CfgVehicles
 		};
 		class Crafting
 		{
-			displayName = "Hungarian_Armband";
+			displayName = "Hungarian Armband";
 			tools[] =
 			{
 				"Knife",
@@ -139,7 +139,7 @@ class CfgVehicles
 			};
 			components[] =
 			{
-				{"Hungarian_Armband", 1}
+				{"Hun_Flag", 1}
 			};
 			result[] =
 			{
