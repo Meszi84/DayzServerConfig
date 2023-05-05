@@ -44,3 +44,11 @@
     <!-- Lightning density (0..1), threshold for the lightning appearance (tied to the overcast value, 0..1), time (seconds) between the lightning strikes -->
     <storm density="1.0" threshold="0.8" timeout="60"/>
 </weather>
+/* A DayZ konfigurációs fájljaiban a villámlások intenzitásának beállítása a <lightning> tag-nél található. Az alapértelmezett beállításokban a villámok intenzitása nincs túl magasra állítva, de ez könnyen megváltoztatható. 
+A következő példa egy magasabb villám intenzitást állít be
+A <current actual="1.0"> tag értékét lehet növelni, hogy magasabb legyen a villámok intenzitása. A <timelimits> és a <changelimits> tagok segítségével beállítható, hogy milyen gyakran és milyen mértékben változzon a villámok intenzitása. 
+Ne felejtsd el, hogy az intenzív villámok a játék teljesítményét is csökkenthetik, így fontos, hogy az optimális beállításokat használd.
+A density értéke csak 0 és 1 közötti tizedes tört lehet, például 0.1, 0.2, 0.3, ..., 0.9, 1.0. Tehát nem lehet 1.5 az értéke. A 1.0 a legmagasabb sűrűségű vihar, ami már nagyon gyakori villámlásokat eredményez.
+A <storm> tag a szeles időjárási viszonyokat és a villámokat befolyásolja. Az alábbiakban megtalálhatók az egyes attribútumok jelentései:
+
+density: A vihar intenzitásának beállítása. 0.0 és 1.0 közötti értékkel lehet beállítani, ahol 0.0 esetén nem lesz vihar, 1.0 esetén pedig a legintenzívebb vihart kapjuk. A nagyobb értékek erősebb széllel, erősebb villámlással és hevesebb esővel járnak.
