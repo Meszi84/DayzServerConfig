@@ -1,24 +1,24 @@
 class CfgPatches
 {
-	class FinalDay_Flags
+	class <MyModNeve>
 	{
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
-		{"DZ_Data", "DZ_Gear_Camping", "DZ_Characters", "DayZExpansion_Scripts",};
+		{"DZ_Data", "DZ_Gear_Camping", "DZ_Characters",};
 	};
 };
 class CfgMods
 {
-	class FinalDay_Flags
+	class <MyModNeve>
 	{
-		dir = "FinalDay_Flags";
+		dir = "<MyModNeve>";
 		picture = "";
 		action = "";
 		hideName = 1;
 		hidePicture = 1;
-		name = "FinalDay_Flags";
+		name = "<MyModNeve>";
 		credits = "Predator";
 		author = "Predator";
 		authorID = "0";
@@ -31,12 +31,12 @@ class CfgMods
 			class gameScriptModule
 			{
 				value = "";
-				files[] = {"FinalDay_Flags/scripts/3_Game"};
+				files[] = {"<MyModNeve>/scripts/3_Game"};
 			};
 			class worldScriptModule
 			{
 				value = "";
-				files[] = {"MyFlags/scripts/4_World"};
+				files[] = {"<MyModNeve>/scripts/4_World"};
 			};
 		};
 	};
@@ -44,7 +44,7 @@ class CfgMods
 class CfgVehicles
 {
 	class Flag_Base;
-	class Predators_Flag: Flag_Base
+	class <MyFlagNeve>: Flag_Base
 	{
 		displayName = "Predators Flag";
 		descriptionShort = "Predator Team Flags";
@@ -52,101 +52,64 @@ class CfgVehicles
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"FinalDay_Flags\data\PredatorsFlag.paa"
+			"<MyModNeve>\data\PredatorsFlag.paa"
 		};
     };
 	class Flag_Base;
-	class Hun_Flag: Flag_Base
+	class <MyFlagNeve2>: Flag_Base
 	{
-		displayName = "Hungarian Flag";
-		descriptionShort = "Hungarian Flags";
-		color="HunFlag"
+		displayName = "<MyFlagNeve2>";
+		descriptionShort = "<MyFlagNeve2>";
+		color="<MyFlagNeve2>"
 		scope=2;
 		hiddenSelectionsTextures[]=
 		{
-			"FinalDay_Flags\data\Hun_Flag.paa"
+			"<MyFlagNeve2>\data\Hun_Flag.paa"
 		};
+          };
     };
     class Armband_ColorBase;
-	class Predators_Armband: Armband_ColorBase
+	class <MyArmbandNeve>: Armband_ColorBase
 	{
-		displayName="Predators Armband";
-		descriptionShort="Predators team ";
-		color="PredatorsArmband";
+		displayName="<MyArmbandNeve>";
+		descriptionShort="<MyArmbandNeve> ";
+		color="<MyArmbandNeve>";
 		scope=2;
 		visibilityModifier=0.94999999;
 		hiddenSelectionsTextures[]=
 		{
-			"FinalDay_Flags\data\PredatorsFlag.paa",
-			"FinalDay_Flags\data\PredatorsFlag.paa",
-			"FinalDay_Flags\data\PredatorsFlag.paa",
-			"FinalDay_Flags\data\PredatorsFlag.paa",
-			"FinalDay_Flags\data\PredatorsFlag.paa",
-			"FinalDay_Flags\data\PredatorsFlag.paa",
-			"FinalDay_Flags\data\PredatorsFlag.paa",
-			"FinalDay_Flags\data\PredatorsFlag.paa",
-			"FinalDay_Flags\data\PredatorsFlag.paa",
-			"FinalDay_Flags\data\PredatorsFlag.paa"
-		};
-		class Crafting
-		{
-			displayName = "Predators Armband";
-			tools[] =
-			{
-				"Knife",
-				"CombatKnife",
-				"HuntingKnife",
-				"KitchenKnife",
-				"SteakKnife"
-			};
-			components[] =
-			{
-				{"Predators_Flag", 1}
-			};
-			result[] =
-			{
-				"Predators_Armband", 3
-			};
+			"<MyArmbandNeve>\data\PredatorsFlag.paa",
+			"<MyArmbandNeve>\data\PredatorsFlag.paa",
+			"<MyArmbandNeve>\data\PredatorsFlag.paa",
+			"<MyArmbandNeve>\data\PredatorsFlag.paa",
+			"<MyArmbandNeve>\data\PredatorsFlag.paa",
+			"<MyArmbandNeve>\data\PredatorsFlag.paa",
+			"<MyArmbandNeve>\data\PredatorsFlag.paa",
+			"<MyArmbandNeve>\data\PredatorsFlag.paa",
+			"<MyArmbandNeve>\data\PredatorsFlag.paa",
+			"<MyArmbandNeve>\data\PredatorsFlag.paa"
 		};
 	};
-	class Hungarian_Armband: Armband_ColorBase
+	class <MyArmbandNeve2>: Armband_ColorBase
 	{
-		displayName="Hungarian Armband";
-		descriptionShort="Hungarian team ";
-		color="HungarianArmband";
+		displayName="<MyArmbandNeve2>";
+		descriptionShort="<MyArmbandNeve2> team ";
+		color="<MyArmbandNeve2>";
 		scope=2;
 		visibilityModifier=0.94999999;
 		hiddenSelectionsTextures[]=
 		{
-			"FinalDay_Flags\data\Hun_Flag.paa",
-			"FinalDay_Flags\data\Hun_Flag.paa",
-			"FinalDay_Flags\data\Hun_Flag.paa",
-			"FinalDay_Flags\data\Hun_Flag.paa",
-			"FinalDay_Flags\data\Hun_Flag.paa",
-			"FinalDay_Flags\data\Hun_Flag.paa",
-			"FinalDay_Flags\data\Hun_Flag.paa",
-			"FinalDay_Flags\data\Hun_Flag.paa",
-			"FinalDay_Flags\data\Hun_Flag.paa"
+			"<MyArmbandNeve2>\data\Hun_Flag.paa",
+			"<MyArmbandNeve2>\data\Hun_Flag.paa",
+			"<MyArmbandNeve2>\data\Hun_Flag.paa",
+			"<MyArmbandNeve2>\data\Hun_Flag.paa",
+			"<MyArmbandNeve2>\data\Hun_Flag.paa",
+			"<MyArmbandNeve2>\data\Hun_Flag.paa",
+			"<MyArmbandNeve2>\data\Hun_Flag.paa",
+			"<MyArmbandNeve2>\data\Hun_Flag.paa",
+			"<MyArmbandNeve2>\data\Hun_Flag.paa"
 		};
-		class Crafting
-		{
-			displayName = "Hungarian Armband";
-			tools[] =
-			{
-				"Knife",
-				"CombatKnife",
-				"HuntingKnife",
-				"KitchenKnife",
-				"SteakKnife"
-			};
-			components[] =
-			{
-				{"Hun_Flag", 1}
-			};
-			result[] =
-			{
-				"Hungarian_Armband", 3
-			};
-		};
-	};
+	    };
+	
+      };
 };
