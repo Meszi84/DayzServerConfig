@@ -1,6 +1,3 @@
-/* Egyéni zászló és abból craftólható Karszalag Configja, Létre hozod a saját mappád, benne egy data mappával ebbe tedd a képeket paa formátumban (512x256) Méretben */
-
-
 class CfgPatches
 {
 	class FinalDay_Flags
